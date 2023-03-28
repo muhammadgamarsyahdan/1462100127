@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-6">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PEMADAM KELAPARAN</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  </head>
+  
+  <body>
+    <div class="container bg-body-tertiary mt-5">
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="row text-center mt-3 bg-info">
+                <h2 class="text-left">PEMADAM KELAPARAN</h2>
+            </div>
+            <div class="row my-3">
+              <div class="col">
+                <label for="namaMakanan" class="form-label">Nama Makanan</label>
+                <select class="form-select" id="namaMakanan">
+                  <option selected>Pilih Makanan</option>
+                  <option value="lontongKikil">Lontong Kikil</option>
+                  <option value="lontongMie">Lontong Mie</option>
+                  <option value="lontongLodeh">Lontong Lodeh</option>
+                  <option value="lontongBalap">Lontong Balap</option>
+                  <option value="rujakCingur">Rujak Cingur</option>
+                </select>
+              </div>
+              <div class="col d-flex align-items-end justify-content-center">
+                <div class="col text-center">
+                  <h5>Harga :</h5>
+                </div>
+                <div class="col" id="hargaMakanan">
+                  <h5> Rp. 0</h5>
+                </div>
+              </div>
+            </div>
+            <div class="row my-1">
+              <div class="col">
+                <label for="namaMinuman" class="form-label">Nama Minuman</label>
+                <select class="form-select" id="namaMinuman">
+                  <option selected>Pilih Minuman</option>
+                  <option value="teh">Aneka Teh</option>
+                  <option value="kopi">Kopi</option>
+                  <option value="nutrisari">Nutrisari</option>
+                  <option value="esCampur">Es Campur</option>
+                  <option value="airMineral">Air Mineral</option>
+                </select>
+              </div>
+              <div class="col d-flex align-items-end justify-content-center">
+                <div class="col text-center">
+                  <h5>Harga :</h5>
+                </div>
+                <div class="col" id="hargaMinuman">
+                  <h5> Rp. 0</h5>
+                </div>
+              </div>            
+            </div>
+            <div class="row my-3">
+              <div class="col">
+                  <label for="jumlahMakanan" class="form-label">Jumlah Makanan</label>
+                  <input type="number" class="form-control" id="jumlahMakanan" min="1" value="1">
+              </div>
+              <div class="col">
+                  <label for="jumlahMinuman" class="form-label">Jumlah Minuman</label>
+                  <input type="number" class="form-control" id="jumlahMinuman" min="1" value="1">
+              </div>
+            </div>
+            <div class="row my-5">
+                <div class="col">
+                  <span class="text-bottom" id="totalHarga">Total Harga : Rp. 0</span>
+                </div>
+            </div>
+            <div class="row my-1">
+              <div class="col">
+                <label for="bayar" class="form-label">Bayar</label>
+                <input type="number" class="form-control" id="bayar" value="0">
+              </div>
+              <div class="col text-center">
+                <h5>Kembalian :</h5>
+              </div>
+              <div class="col" id="kembalian">
+                <h5> Rp. 0</h5>
+              </div>
+            </div>
+            <div class="row my-4">
+                <div class="col text-left">
+                    <button type="submit" class="btn btn-primary">cek out</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
